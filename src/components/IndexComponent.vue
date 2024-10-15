@@ -15,7 +15,7 @@
         :index="index">
         <ProjectItem :link="project.link">
             <template #image>
-              <img :src="'/src/assets/' + project.img" alt="">
+              <img :src="'/' + project.img" alt="">
             </template>
             <template #title>{{ project.title }}</template>
             <template #subtitle>{{ project.subtitle }}</template>
