@@ -10,7 +10,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
     <img class="logo" src="@/assets/logo.svg"/>
-    <button class="btn" @click="getFormModalStateToggle">Get a quote</button>
+    <div class="btn" @click="getFormModalStateToggle">Get a quote</div>
   </header>
   <RouterView />
 </template>
@@ -31,22 +31,24 @@ header {
 
 .logo {
   display: block;
-  width: 145px;
+  width: 155px;
 }
 
 .btn {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  font-weight: 400;
+  font-size: .9em;
+  font-weight: 600;
   border-radius: 100px;
-  background: #fff;
-  padding: .5rem .75rem;
-  border: 1px solid #ddd;
+  background: #111;
+  color: #fff;
+  padding: .35rem .75rem;
+  border: 1px solid #111;
   cursor: pointer;
   transition: all .3s ease-in-out;
 }
 .btn:hover {
-  background: #e9e9e9;
+  background: #c0c0c0;
+    border: 1px solid #c0c0c0;
 }
 
 @media (min-width: 1024px) {

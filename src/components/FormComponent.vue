@@ -81,9 +81,9 @@ watchEffect(() => {
 }
 
 .form-title {
-    font-size: 2em;
-    line-height: 1.15em;
-    font-weight: 600;
+    font-size: 3em;
+    line-height: 1.1em;
+    font-weight: 700;
     margin-bottom: 2rem;
     padding-right: 2rem;
 }

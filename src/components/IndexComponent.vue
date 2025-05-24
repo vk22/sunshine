@@ -4,7 +4,7 @@
     <div class="hero-main">
       <AnimatedComponent delay="0" animation-type="slideup">
         <div class="hero-text-wrap">
-          <h1>Development of digital products</h1>
+          <h1>Development of <span class="color-text">digital products</span></h1>
           <p>We create websites, apps and branding. Our primary focus are start-ups, real estate and eCommerce projects.
           </p>
         </div>
@@ -43,6 +43,12 @@ const formModalOpened = computed(() => store.getFormModalState)
 
 
 const projects = [
+  {
+    img: 'project-img11.jpg',
+    title: 'The House Project',
+    subtitle: 'UX/UI. Develoment.',
+    link: 'https://thisisthehouse.com/'
+  },
   {
     img: 'project-img.jpg',
     title: 'OyOy Restaurant',
@@ -159,34 +165,58 @@ const projects = [
 }
 
 .hero-main {
-  position: relative;
-  height: 60vh;
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 35%;
+}
+
+.hero-text-wrap {
   width: 100%;
-  padding: 2rem 0;
-  display: flex;
-  align-items: flex-end;
+}
+
+.color-text {
+  color: #a1af9a;
+    font-weight: 700;
 }
 
 h1 {
-  font-size: 2.5em;
-  line-height: 1.25em;
+  font-size: 4.5em;
+  line-height: 4.85rem;
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 700;
 }
-
+p {
+  font-size: 1.15rem;
+}
 .projects-index {
   margin-top: 2rem;
   position: relative;
-  background: #fff;
   z-index: 99;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 600px) {
   h1 {
-    font-size: 3em;
+    font-size: 3.5em;
+    font-weight: 700;
+    line-height: 3.75rem;
   }
   .projects-index {
-    margin-top: 8rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 4.5em;
+    font-weight: 700;
+    line-height: 4.85rem;
+  }
+  .projects-index {
+    margin-top: 2rem;
   }
 }
 </style>
