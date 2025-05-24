@@ -17,6 +17,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
 header {
+  background: #f8f8f8;
   font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: space-between;
@@ -24,7 +25,7 @@ header {
   position: fixed;
   z-index: 999;
   width: 100vw;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   top: 0;
   left: 0;
 }

@@ -179,7 +179,7 @@ const projects = [
 }
 
 .color-text {
-  color: #a1af9a;
+  color: #abaf9a;
     font-weight: 700;
 }
 
