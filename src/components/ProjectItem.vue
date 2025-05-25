@@ -50,12 +50,12 @@ const props = defineProps({
 }
 
 .project-details .title {
-  font-size: 1.25em;
+  font-size: 1.15em;
   font-weight: 700;
 }
 
 .project-details .subtitle {
-  font-size: 1.25em;
+  font-size: 1.1em;
   font-weight: 300;
 }
 

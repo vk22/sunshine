@@ -107,7 +107,7 @@ const projects = [
     img: 'project-img9.jpg',
     title: 'Birds Development',
     subtitle: 'UX/UI. Develoment.',
-    link: 'https://birds.ru/'
+    link: 'http://birds.sunshineahead.me/'
   }
 ]
 // const main = ref();
@@ -160,6 +160,10 @@ const projects = [
 </script>
 
 <style>
+
+.index {
+  padding-bottom: 2rem;
+}
 .blur {
   opacity: .5;
 }
@@ -183,15 +187,8 @@ const projects = [
     font-weight: 700;
 }
 
-h1 {
-  font-size: 4.5em;
-  line-height: 4.85rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-p {
-  font-size: 1.15rem;
-}
+
+
 .projects-index {
   margin-top: 2rem;
   position: relative;
@@ -200,12 +197,16 @@ p {
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-weight: 700;
-    line-height: 3.75rem;
+    line-height: 2.75rem;
+    margin-bottom: 1rem;
   }
   .projects-index {
     margin-top: 2rem;
+  }
+  p {
+    font-size: 1.1rem;
   }
 }
 
@@ -214,9 +215,13 @@ p {
     font-size: 4.5em;
     font-weight: 700;
     line-height: 4.85rem;
+    margin-bottom: 1rem;
   }
   .projects-index {
     margin-top: 2rem;
+  }
+  p {
+    font-size: 1.15rem;
   }
 }
 </style>
